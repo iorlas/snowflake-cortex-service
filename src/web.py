@@ -49,11 +49,6 @@ def send_message() -> requests.Response:
         "semantic_model_file": f"@{DATABASE}.{SCHEMA}.{STAGE}/{FILE}",
         "stream": True,
     }
-    print(
-        "CONNECT TO",
-        st.session_state.CONN.host,
-        f"https://{st.session_state.CONN.host}/api/v2/cortex/analyst/message",
-    )
     resp = requests.post(
         url=f"https://{st.session_state.CONN.host}/api/v2/cortex/analyst/message",
         json=request_body,
