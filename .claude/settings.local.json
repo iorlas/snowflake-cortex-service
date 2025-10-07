@@ -5,7 +5,10 @@
       "Bash(mkdir:*)",
       "Bash(git rev-list:*)",
       "Bash(git reset:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(GIT_SEQUENCE_EDITOR=\"sed -i '''' ''s/^pick fa34d67/edit fa34d67/''\" git rebase -i --root)",
+      "Bash(git stash:*)"
     ]
   },
   "enabledMcpjsonServers": [
