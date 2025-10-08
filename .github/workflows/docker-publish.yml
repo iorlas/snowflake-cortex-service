@@ -6,7 +6,7 @@ on:
       - master
       - main
     tags:
-      - 'v*'
+      - "v*"
   pull_request:
     branches:
       - master
@@ -24,6 +24,7 @@ jobs:
       contents: read
       packages: write
       id-token: write
+      attestations: write
 
     steps:
       - name: Checkout repository
